@@ -1,5 +1,5 @@
-import { getRPSChoices } from '../game';
-import { capitalize } from '../utils';
+import { getRPSChoices } from '../game.js';
+import { capitalize } from '../utils.js';
 
 function createCommandChoices() {
   const choices = getRPSChoices();
