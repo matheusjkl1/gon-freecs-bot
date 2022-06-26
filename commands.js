@@ -1,5 +1,5 @@
-import { getRPSChoices } from './game.js';
-import { capitalize, DiscordRequest } from './utils.js';
+// import { getRPSChoices } from './game.js';
+import {  DiscordRequest } from './utils.js';
 
 export async function HasGuildCommands(appId, guildId, commands) {
   if (guildId === '' || appId === '') return;
@@ -41,19 +41,19 @@ export async function InstallGuildCommand(appId, guildId, command) {
 }
 
 // Get the game choices from game.js
-function createCommandChoices() {
-  const choices = getRPSChoices();
-  const commandChoices = [];
+// function createCommandChoices() {
+//   const choices = getRPSChoices();
+//   const commandChoices = [];
 
-  for (let choice of choices) {
-    commandChoices.push({
-      name: capitalize(choice),
-      value: choice.toLowerCase(),
-    });
-  }
+//   for (let choice of choices) {
+//     commandChoices.push({
+//       name: capitalize(choice),
+//       value: choice.toLowerCase(),
+//     });
+//   }
 
-  return commandChoices;
-}
+//   return commandChoices;
+// }
 
 // Simple test command
 // export const TEST_COMMAND = {
