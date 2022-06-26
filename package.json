@@ -2,10 +2,10 @@
   "name": "discord-getting-started",
   "version": "1.0.0",
   "description": "Basic Discord app using interactions",
-  "main": "app.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "node src/server.js"
   },
   "author": "Shay DeWael",
   "license": "MIT",
@@ -21,6 +21,7 @@
     "node-fetch": "^3.2.3"
   },
   "devDependencies": {
+    "eslint": "^8.18.0",
     "nodemon": "^2.0.15"
   },
   "keywords": [
