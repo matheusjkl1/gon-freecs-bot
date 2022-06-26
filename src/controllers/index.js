@@ -1,3 +1,4 @@
+import { InteractionType } from 'discord-interactions';
 import { mapObject } from '../build/mapResponse.js';
 
 // const { getAllChamp, getFreeWeek, } = require('../model')
