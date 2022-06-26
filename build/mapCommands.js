@@ -1,3 +1,20 @@
+import { getRPSChoices } from '../game';
+import { capitalize } from '../utils';
+
+function createCommandChoices() {
+  const choices = getRPSChoices();
+  const commandChoices = [];
+
+  for (let choice of choices) {
+    commandChoices.push({
+      name: capitalize(choice),
+      value: choice.toLowerCase(),
+    });
+  }
+
+  return commandChoices;
+}
+
 const TEST_COMMAND = {
   name: 'test',
   description: 'Basic guild command',
