@@ -1,6 +1,6 @@
 import { InteractionResponseType, InteractionType } from 'discord-interactions';
 import { Router } from 'express';
-import { getRandomEmoji } from '../utils.js';
+import { getRandomEmoji } from './utils/index.js';
 
 const router = Router();
 

@@ -1,4 +1,4 @@
-import { CHALLENGE_COMMAND, HasGuildCommands, TEST_COMMAND } from '../commands.js';
+import { CHALLENGE_COMMAND, HasGuildCommands, TEST_COMMAND } from './utils/commands.js';
 import app from './app.js';
 
 // Get port, or default to 3000
