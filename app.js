@@ -60,6 +60,10 @@ app.post('/interactions', async function (req, res) {
   }
 });
 
+app.get('/', async function (req, res) {
+  res.send({ message: "Ok, everything working!" })
+});
+
 app.listen(PORT, () => {
   console.log('Listening on port', PORT);
 
