@@ -13,8 +13,10 @@
     "node": "16.x"
   },
   "dependencies": {
+    "@discordjs/rest": "^0.5.0",
     "cors": "^2.8.5",
     "discord-interactions": "^3.2.0",
+    "discord.js": "^13.8.1",
     "dotenv": "^16.0.1",
     "express": "^4.17.3",
     "ngrok": "^4.3.1",
