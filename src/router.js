@@ -37,4 +37,14 @@ router.post('/interactions', async function (req, res) {
   }
 });
 
+router.get('/', async function (req, res) {
+  res.send({
+    message: "Ok, everything working!",
+    PUBLIC_KEY: process.env.PUBLIC_KEY,
+    APP_ID: process.env.APP_ID,
+    BOT_NAME: process.env.BOT_NAME,
+  })
+});
+
+
 export default router;
