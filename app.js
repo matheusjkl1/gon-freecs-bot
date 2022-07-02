@@ -61,7 +61,11 @@ app.post('/interactions', async function (req, res) {
 });
 
 app.get('/', async function (req, res) {
-  res.send({ message: "Ok, everything working!" })
+  res.send({
+    message: "Ok, everything working!",
+    PUBLIC_KEY: process.env.PUBLIC_KEY,
+    APP_ID: process.env.APP_ID,
+  })
 });
 
 app.listen(PORT, () => {
